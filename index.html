@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Page Title</title>
+     <link rel="stylesheet" href="css/1.css" media="all" type="text/css">
+     <link rel="stylesheet" href="css/mob.css" media="only screen and (max-device-width: 600px)" type="text/css">
+   <link rel="stylesheet" href="css/nav.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="{{page.description}}" />
+    <meta http-equiv="date" content="{{page.date |date: '%A, %d  %Y %H:%M:%S GMT'}}" />
+    <meta name="robots" content="{{page.index}}INDEX,FOLLOW" />
+    <title>{{ page.title }}</title>
 </head>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <div class="nav">
+<nav>
+  <ul>
+    <li><a href="index.html" id="intro">Home</a></li>
+    <li><a href="about.html" id="abt">About</a></li>
 
-</body>
+
+  </ul>
+  </nav>
+</div>
+</html>
+
+<div class="ban"> </div>
+
+<body id="{{ page.id }}">
+  </body>
 </html>
